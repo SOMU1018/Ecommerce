@@ -1,0 +1,120 @@
+/* Cart Container */
+.cart-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cart Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2c3e50; /* Matching header color */
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+table td {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Quantity Input */
+input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    background: #ff5733; /* Same as logout button */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e84e2f;
+}
+
+/* Remove Button */
+button[name="remove_from_cart"] {
+    background: #e74c3c; /* Red for delete */
+}
+
+button[name="remove_from_cart"]:hover {
+    background: #c0392b;
+}
+
+/* Total Cost */
+.total-cost {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50; /* Match header color */
+    margin-top: 20px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    display: inline-block;
+    background: #2ecc71; /* Same as add-to-cart */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-container {
+        width: 95%;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+
+    .checkout-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
