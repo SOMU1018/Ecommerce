@@ -104,7 +104,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <header>
         <div class="header-container">
-            <h1>welcome to MAHI stores </h1>
+            <h1>welcome to stores </h1>
             <nav>
                <a href="pages/login.php"><button>Login</button></a> 
                 <a href="pages/register.php"><button>Register</button></a>
